@@ -38,6 +38,11 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- Add styling to hyprland config files
+vim.filetype.add {
+  pattern = { ['.*/hyprland%.conf'] = 'hyprlang' },
+}
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
