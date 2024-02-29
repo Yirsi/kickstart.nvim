@@ -2,6 +2,8 @@
 
 ## Introduction
 
+*This is a fork of [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) that i might or might not fuck up.*
+
 A starting point for Neovim that is:
 
 * Small
