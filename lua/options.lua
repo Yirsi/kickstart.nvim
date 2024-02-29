@@ -1,4 +1,3 @@
-
 -- [[ Setting options ]]
 -- See `:help vim.opt`
 --  NOTE:  For more options, you can see `:help option-list`
@@ -18,8 +17,9 @@ vim.opt.showmode = false
 -- Or just reach it using "+
 -- vim.opt.clipboard = 'unnamedplus'
 
--- Enable break indent
+-- Indents
 vim.opt.breakindent = true
+vim.opt.smartindent = true
 
 -- Save undo history
 vim.opt.undofile = true
@@ -29,7 +29,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- Keep signcolumn on by default
-vim.opt.signcolumn = 'auto'
+vim.opt.signcolumn = 'yes'
 
 -- Decrease update time
 vim.opt.updatetime = 250
@@ -53,4 +53,3 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
-
