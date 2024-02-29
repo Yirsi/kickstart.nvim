@@ -2,21 +2,16 @@
 
     Learn lua:
       - https://learnxinyminutes.com/docs/lua/
-
     use `:help lua-guide` as a reference for how Neovim integrates Lua.
     - :help lua-guide
-    - (or HTML version): https://neovim.io/doc/user/lua-guide.html
 
 Kickstart Guide:
 
   NOTE: Use `:Tutor` to learn or get a refresh of the basics of vim.
 
-  Next, run AND READ `:help`.
+  Run `:help` if you forgot everything ig?
     This will open up a help window with some basic information
-    about reading, navigating and searching the builtin help documentation.
-
     MOST IMPORTANTLY, we provide a keymap "<space>sh" to [s]earch the [h]elp documentation,
-    which is very useful when you're not sure exactly what you're looking for.
 
   NOTE: If you experience any errors while trying to install kickstart, run `:checkhealth` for more info
 
@@ -29,60 +24,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- [[ Setting options ]]
--- See `:help vim.opt`
--- NOTE: You can change these options as you wish!
---  For more options, you can see `:help option-list`
-
--- Make line numbers default
-vim.opt.number = true
--- Add relative line numbers for help with jumping.
-vim.opt.relativenumber = true
-
--- Enable mouse mode, can be useful for resizing splits for example!
-vim.opt.mouse = 'a'
-
--- Don't show the mode, since it's already in status line
-vim.opt.showmode = false
-
--- Sync clipboard between OS and Neovim
--- Or just reach it using "+
--- vim.opt.clipboard = 'unnamedplus'
-
--- Enable break indent
-vim.opt.breakindent = true
-
--- Save undo history
-vim.opt.undofile = true
-
--- Case-insensitive searching UNLESS \C or capital in search
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
-
--- Keep signcolumn on by default
-vim.opt.signcolumn = 'auto'
-
--- Decrease update time
-vim.opt.updatetime = 250
-vim.opt.timeoutlen = 300
-
--- Configure how new splits should be opened
-vim.opt.splitright = true
-vim.opt.splitbelow = true
-
--- Sets how neovim will display certain whitespace in the editor.
---  See :help 'list'
---  and :help 'listchars'
-vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
-
--- Preview substitutions live, as you type!
-vim.opt.inccommand = 'split'
-
--- Show which line your cursor is on
-vim.opt.cursorline = true
-
--- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 10
+require 'options'
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
